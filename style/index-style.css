@@ -6640,5 +6640,474 @@ header.scrolled {
         height: 38px;
     }
 }
+/* =========================================================
+   HERO SECTION ENTRANCE ANIMATIONS
+========================================================= */
 
+/* Define Keyframe Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply Animations with Staggered Delays */
+.hero-tag {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.hero-text h1 {
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+    opacity: 0; /* Hidden until animation starts */
+}
+
+.hero-text p {
+    animation: fadeInUp 0.8s ease-out 0.4s forwards;
+    opacity: 0;
+}
+
+.hero-buttons {
+    animation: fadeInUp 0.8s ease-out 0.6s forwards;
+    opacity: 0;
+}
+
+.hero-trust {
+    animation: fadeIn 1s ease-out 0.8s forwards;
+    opacity: 0;
+}
+
+/* Hover Micro-Interactions */
+.hero-buttons .btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero-buttons .btn-primary:hover i {
+    transform: translateX(4px);
+    transition: transform 0.3s ease;
+}
+/* =========================================================
+   PROPERTY SEARCH SECTION
+========================================================= */
+
+.property-search {
+  margin-top: -60px; /* Overlaps slightly with hero section for floating card effect */
+  position: relative;
+  z-index: 10;
+  padding: 0 1rem;
+}
+
+.search-box {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.search-heading {
+  margin-bottom: 1.5rem;
+}
+
+.search-heading span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #0056b3;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.search-heading h2 {
+  font-size: 1.5rem;
+  color: #111111;
+  margin-top: 0.25rem;
+}
+
+/* Horizontal Form Layout */
+.property-search-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) auto;
+  gap: 1rem;
+  align-items: end;
+}
+
+.search-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.search-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #444444;
+}
+
+.search-field select {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 0.95rem;
+  color: #333333;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.search-field select:focus {
+  border-color: #0056b3;
+  background-color: #ffffff;
+}
+
+/* Search Button */
+.search-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #0056b3;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.75rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  height: 48px; /* Matches dropdown input height */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.search-button:hover {
+  background-color: #004085;
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   SCROLL REVEAL ANIMATIONS FOR SECTIONS
+========================================================= */
+
+/* 1. Base Hidden State for Sections */
+.property-search,
+.properties-section,
+.about-section,
+.services-section,
+.testimonial-section,
+.why-section,
+.investment-section,
+.vision-section,
+.values-section,
+.team-section,
+.location-section,
+.contact-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  will-change: opacity, transform;
+}
+
+/* 2. Visible State Added by JavaScript */
+.property-search.is-visible,
+.properties-section.is-visible,
+.about-section.is-visible,
+.services-section.is-visible,
+.testimonial-section.is-visible,
+.why-section.is-visible,
+.investment-section.is-visible,
+.vision-section.is-visible,
+.values-section.is-visible,
+.team-section.is-visible,
+.location-section.is-visible,
+.contact-section.is-visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+/* =========================================================
+   HERO TEXT DROPPING ANIMATIONS
+========================================================= */
+
+/* 1. Define Keyframe Animations */
+@keyframes dropDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px); /* Starts 40px higher */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Drops into natural position */
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px); /* Starts 40px lower */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Slides up to natural position */
+    }
+}
+
+/* 2. Apply Drop-Down to Heading and Slide-Up to Content */
+.hero-tag {
+    opacity: 0;
+    animation: dropDown 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-delay: 0.1s;
+}
+
+.hero-text h1 {
+    opacity: 0;
+    animation: dropDown 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-delay: 0.3s;
+}
+
+.hero-text p {
+    opacity: 0;
+    animation: slideUp 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-delay: 0.5s;
+}
+
+.hero-buttons {
+    opacity: 0;
+    animation: slideUp 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-delay: 0.7s;
+}
+
+.hero-trust {
+    opacity: 0;
+    animation: slideUp 0.8s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+    animation-delay: 0.9s;
+}
+
+/* =========================================================
+   FEATURED PROPERTIES SECTION (style.css)
+========================================================= */
+
+.properties-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+/* Header Alignment */
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.section-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0056b3;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+  color: #111111;
+  font-weight: 800;
+}
+
+.view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #0056b3;
+  font-weight: 600;
+  text-decoration: none;
+  transition: gap 0.3s ease;
+}
+
+.view-all:hover {
+  gap: 0.8rem;
+}
+
+/* Grid Layout */
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+/* Individual Card Styling */
+.property-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.property-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Image Wrapper and Badges */
+.property-image {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+  background-color: #e9ecef;
+}
+
+.property-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.property-card:hover .property-image img {
+  transform: scale(1.08);
+}
+
+.property-status {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: #0056b3;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.property-favorite {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #444444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.property-favorite:hover {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+/* Card Content Details */
+.property-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.property-type {
+  font-size: 0.8rem;
+  color: #6c757d;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+
+.property-content h3 {
+  font-size: 1.25rem;
+  color: #111111;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.property-location {
+  font-size: 0.9rem;
+  color: #555555;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.property-location i {
+  color: #0056b3;
+}
+
+/* Property Metadata Bar */
+.property-meta {
+  display: flex;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 1.25rem;
+}
+
+.property-meta span {
+  font-size: 0.82rem;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.property-meta i {
+  color: #0056b3;
+}
+
+/* Pricing and View Link Footer */
+.property-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.property-bottom strong {
+  font-size: 1.3rem;
+  color: #0056b3;
+  font-weight: 800;
+}
+
+.property-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #111111;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.property-link:hover {
+  color: #0056b3;
+}
 
