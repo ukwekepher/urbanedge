@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 
     <title>Urban Edge Real Estate Ltd. | Building Wealth. Creating Communities.</title>
 
@@ -10,7 +11,7 @@
         content="Urban Edge Real Estate Ltd. provides verified land, property investment advisory, real estate consultancy, property management and documentation services.">
 
     <link rel="stylesheet" href="style/index-style.css">
-    <link rel="stylesheet" href="css/responsive.css"><!-- Urban Edge Browser Tab Logo -->
+    <link rel="stylesheet" href="./style/responsive.css"><!-- Urban Edge Browser Tab Logo -->
 
 <!-- =================================================
      URBAN EDGE REAL ESTATE FAVICON
@@ -52,7 +53,7 @@
 
 <body>
 
-    <body>
+  
 
     <!-- =================================================
      URBAN EDGE PREMIUM LOADER
@@ -177,7 +178,7 @@
     <div class="ue-brand">
 
         <div class="ue-mark">
-    <img src="infor/logo.png" alt="Urban Edge Real Estate Logo">
+    <img src="./infor/logo.png" alt="Urban Edge Real Estate Logo">
 </div>
 
         <div class="ue-brand-name">
@@ -239,800 +240,219 @@
 
    
 
-    <!-- =====================================================
-         HEADER / NAVIGATION
-    ====================================================== -->
+   <!-- =====================================================
+     HEADER / NAVIGATION
+====================================================== -->
 
-    <header class="site-header">
+<header class="site-header">
+    <div class="container nav-container">
 
-        <div class="container nav-container">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <div class="logo-mark">
+               <img src="./infor/logo.png" alt="Urban Edge Real Estate">
+            </div>
+            <div class="logo-text">
+                <strong>URBAN EDGE</strong>
+                <small>REAL ESTATE LTD. Reg:0389918</small>
+            </div>
+        </a>
 
-            <a href="index.html" class="logo">
+        <!-- Desktop Navigation Bar (Shown on PC, Hidden on Mobile) -->
+        <nav class="main-nav desktop-nav">
 
-                <div class="logo-mark">
-                   <img src="infor/logo.png" alt="Urban Edge Real Estate">
+            <!-- Home Dropdown -->
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" type="button">
+                    Home <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="nav-dropdown-menu">
+                    <a href="index.html#home"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="index.html#find-property"><i class="fa-solid fa-magnifying-glass"></i> Find a Property</a>
+                    <a href="index.html#properties"><i class="fa-solid fa-building"></i> Featured Properties</a>
+                    <a href="index.html#about"><i class="fa-solid fa-circle-info"></i> About Urban Edge</a>
+                    <a href="index.html#services"><i class="fa-solid fa-briefcase"></i> Our Services</a>
+                    <a href="index.html#why-choose-us"><i class="fa-solid fa-star"></i> Why Choose Us</a>
+                    <a href="index.html#investment"><i class="fa-solid fa-chart-line"></i> Investment</a>
+                    <a href="index.html#vision-mission"><i class="fa-solid fa-eye"></i> Vision & Mission</a>
+                    <a href="index.html#core-values"><i class="fa-solid fa-heart"></i> Core Values</a>
+                    <a href="index.html#team"><i class="fa-solid fa-users"></i> Our Team</a>
+                    <a href="index.html#contact"><i class="fa-solid fa-phone"></i> Contact Us</a>
                 </div>
+            </div>
 
-                <div class="logo-text">
-                    <strong>URBAN EDGE</strong>
-                    <small>REAL ESTATE LTD. Reg:0389918</small>
+            <!-- Properties Dropdown -->
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" type="button">
+                    Properties <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="nav-dropdown-menu">
+                    <a href="page/properties.html"><i class="fa-solid fa-building"></i> All Properties</a>
+                    <a href="page/properties.html"><i class="fa-solid fa-house"></i> Residential Land</a>
+                    <a href="page/properties.html?type=commercial-land"><i class="fa-solid fa-city"></i> Commercial Land</a>
+                    <a href="page/inavil.html"><i class="fa-solid fa-house-chimney"></i> Houses</a>
+                    <a href="page/inavil.html"><i class="fa-solid fa-building"></i> Apartments</a>
+                    <a href="page/inavil.html"><i class="fa-solid fa-store"></i> Commercial Properties</a>
+                    <a href="page/inavil.html"><i class="fa-solid fa-star"></i> Featured Properties</a>
                 </div>
+            </div>
 
-            </a>
+            <!-- About Us Dropdown -->
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" type="button">
+                    About Us <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="nav-dropdown-menu">
+                    <a href="index.html#about"><i class="fa-solid fa-building"></i> Who We Are</a>
+                    <a href="page/FQA.html"><i class="fa-solid fa-clock-rotate-left"></i> Our Story</a>
+                    <a href="index.html#vision-mission"><i class="fa-solid fa-eye"></i> Our Vision</a>
+                    <a href="index.html#vision-mission"><i class="fa-solid fa-bullseye"></i> Our Mission</a>
+                    <a href="page/core.html"><i class="fa-solid fa-heart"></i> Our Core Values</a>
+                    <a href="index.html#why-choose-us"><i class="fa-solid fa-star"></i> Why Choose Urban Edge</a>
+                    <a href="page/term.html"><i class="fa-solid fa-users"></i> Our Team</a>
+                    <a href="index.html#contact"><i class="fa-solid fa-phone"></i> Contact Us</a>
+                </div>
+            </div>
 
-            <nav class="main-nav">
+            <!-- Services Dropdown -->
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" type="button">
+                    Services <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="nav-dropdown-menu">
+                    <a href="page/service.html"><i class="fa-solid fa-briefcase"></i> All Services</a>
+                    <a href="page/properties.html"><i class="fa-solid fa-house"></i> Land & Property Sales</a>
+                    <a href="index.html#investment"><i class="fa-solid fa-chart-line"></i> Property Investment Advisory</a>
+                    <a href="page/cons.html"><i class="fa-solid fa-user-tie"></i> Real Estate Consultancy</a>
+                    <a href="page/properties.html"><i class="fa-solid fa-bullhorn"></i> Property Marketing</a>
+                    <a href="page/manage.html"><i class="fa-solid fa-building"></i> Property Management</a>
+                    <a href="index.html#contact"><i class="fa-solid fa-map-location-dot"></i> Property Inspection</a>
+                </div>
+            </div>
 
-                <!-- Home Dropdown -->
-<div class="nav-dropdown">
+            <!-- Why Choose Us Dropdown -->
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" type="button">
+                    Why Choose Us <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="nav-dropdown-menu">
+                    <a href="./page/properties.html"><i class="fa-solid fa-circle-check"></i> Genuine & Verified Properties</a>
+                    <a href="index.html#testimonials"><i class="fa-solid fa-shield-halved"></i> Transparent Transactions</a>
+                    <a href="./page/location.html"><i class="fa-solid fa-location-dot"></i> Strategic Locations</a>
+                    <a href="./page/properties.html"><i class="fa-solid fa-tags"></i> Affordable Pricing</a>
+                    <a href="page/payment.html"><i class="fa-solid fa-credit-card"></i> Flexible Payment Plans</a>
+                    <a href="index.html#contact"><i class="fa-solid fa-headset"></i> Excellent Customer Support</a>
+                    <a href="page/download.html"><i class="fa-solid fa-file-circle-check"></i> Fast Documentation</a>
+                    <a href="page/cons.html"><i class="fa-solid fa-chart-line"></i> Investment Potential</a>
+                </div>
+            </div>
 
-    <button class="nav-dropdown-toggle" type="button">
-        Home
-        <i class="fa-solid fa-chevron-down"></i>
-    </button>
+            <!-- Our Team Dropdown -->
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" type="button">
+                    Our Team <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="nav-dropdown-menu">
+                    <a href="page/managment.html"><i class="fa-solid fa-user-tie"></i> Management</a>
+                    <a href="page/logistics.html"><i class="fa-solid fa-gears"></i> Operations & Logistics</a>
+                    <a href="page/admin.html"><i class="fa-solid fa-clipboard-user"></i> Administration</a>
+                    <a href="page/customer.html"><i class="fa-solid fa-headset"></i> Customer Care</a>
+                    <a href="./page/partner.html"><i class="fa-solid fa-users"></i> Affiliate Partner</a>
+                </div>
+            </div>
 
-    <div class="nav-dropdown-menu">
+            <!-- Contact Dropdown -->
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" type="button">
+                    Contact <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="nav-dropdown-menu">
+                    <a href="index.html#contact"><i class="fa-solid fa-address-card"></i> Contact Us</a>
+                    <a href="index.html#location"><i class="fa-solid fa-location-dot"></i> Office Location</a>
+                    <a href="tel:+2348102601114"><i class="fa-solid fa-phone"></i> Call Us</a>
+                    <a href="https://wa.me/2348102601114" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                    <a href="index.html#contact"><i class="fa-solid fa-envelope"></i> Send an Enquiry</a>
+                    <a href="page/location.html"><i class="fa-solid fa-calendar-check"></i> Book Property Inspection</a>
+                </div>
+            </div>
 
-        <a href="index.html#home">
-            <i class="fa-solid fa-house"></i>
-            Home
-        </a>
+            <a href="#properties" class="nav-cta">Invest Today</a>
+        </nav>
 
-        <a href="index.html#find-property">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            Find a Property
-        </a>
-
-        <a href="index.html#properties">
-            <i class="fa-solid fa-building"></i>
-            Featured Properties
-        </a>
-
-        <a href="index.html#about">
-            <i class="fa-solid fa-circle-info"></i>
-            About Urban Edge
-        </a>
-
-        <a href="index.html#services">
-            <i class="fa-solid fa-briefcase"></i>
-            Our Services
-        </a>
-
-        <a href="index.html#why-choose-us">
-            <i class="fa-solid fa-star"></i>
-            Why Choose Us
-        </a>
-
-        <a href="index.html#investment">
-            <i class="fa-solid fa-chart-line"></i>
-            Investment
-        </a>
-
-        <a href="index.html#vision-mission">
-            <i class="fa-solid fa-eye"></i>
-            Vision & Mission
-        </a>
-
-        <a href="index.html#core-values">
-            <i class="fa-solid fa-heart"></i>
-            Core Values
-        </a>
-
-        <a href="index.html#team">
-            <i class="fa-solid fa-users"></i>
-            Our Team
-        </a>
-
-        <a href="index.html#contact">
-            <i class="fa-solid fa-phone"></i>
-            Contact Us
-        </a>
-
-    </div>
-
-</div>
-                <!-- Properties Dropdown -->
-<div class="nav-dropdown">
-
-    <button class="nav-dropdown-toggle" type="button">
-        Properties
-        <i class="fa-solid fa-chevron-down"></i>
-    </button>
-
-    <div class="nav-dropdown-menu">
-
-        <a href="page/properties.html">
-            <i class="fa-solid fa-building"></i>
-            All Properties
-        </a>
-
-        <a href="page/properties.html">
-            <i class="fa-solid fa-house"></i>
-            Residential Land
-        </a>
-
-        <a href="page/properties.html?type=commercial-land">
-            <i class="fa-solid fa-city"></i>
-            Commercial Land
-        </a>
-
-        <a href="page/inavil.html">
-            <i class="fa-solid fa-house-chimney"></i>
-            Houses
-        </a>
-
-        <a href="page/inavil.html">
-            <i class="fa-solid fa-building"></i>
-            Apartments
-        </a>
-
-        <a href="page/inavil.html">
-            <i class="fa-solid fa-store"></i>
-            Commercial Properties
-        </a>
-
-        <a href="page/inavil.html">
-            <i class="fa-solid fa-star"></i>
-            Featured Properties
-        </a>
+        <!-- Hamburger Icon (Mobile Only) -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
     </div>
-
-</div>
-                <!-- About Us Dropdown -->
-<div class="nav-dropdown">
-
-    <button class="nav-dropdown-toggle" type="button">
-        About Us
-        <i class="fa-solid fa-chevron-down"></i>
-    </button>
-
-    <div class="nav-dropdown-menu">
-
-        <a href="index.html#about">
-            <i class="fa-solid fa-building"></i>
-            Who We Are
-        </a>
-
-        <a href="page/FQA.html">
-            <i class="fa-solid fa-clock-rotate-left"></i>
-            Our Story
-        </a>
-
-        <a href="index.html#vision-mission">
-            <i class="fa-solid fa-eye"></i>
-            Our Vision
-        </a>
-
-        <a href="index.html#vision-mission ">
-            <i class="fa-solid fa-bullseye"></i>
-            Our Mission
-        </a>
-
-        <a href="page/core.html">
-            <i class="fa-solid fa-heart"></i>
-            Our Core Values
-        </a>
-
-        <a href="index.html#why-choose-us ">
-            <i class="fa-solid fa-star"></i>
-            Why Choose Urban Edge
-        </a>
-
-        <a href="page/term.html">
-            <i class="fa-solid fa-users"></i>
-            Our Team
-        </a>
-
-        <a href=" index.html#contact ">
-            <i class="fa-solid fa-phone"></i>
-            Contact Us
-        </a>
-
-    </div>
-
-</div>
-              
-<!-- Services Dropdown -->
-<div class="nav-dropdown">
-
-    <button class="nav-dropdown-toggle" type="button">
-        Services
-        <i class="fa-solid fa-chevron-down"></i>
-    </button>
-
-    <div class="nav-dropdown-menu">
-
-        <a href="page/service.html">
-            <i class="fa-solid fa-briefcase"></i>
-            All Services
-        </a>
-
-        <a href="page/properties.html">
-            <i class="fa-solid fa-house"></i>
-            Land & Property Sales
-        </a>
-
-        <a href="index.html#investment">
-            <i class="fa-solid fa-chart-line"></i>
-            Property Investment Advisory
-        </a>
-
-        <a href="page/cons.html">
-            <i class="fa-solid fa-user-tie"></i>
-            Real Estate Consultancy
-        </a>
-
-        <a href="page/properties.html">
-            <i class="fa-solid fa-bullhorn"></i>
-            Property Marketing
-        </a>
-
-        <a href="page/manage.html">
-            <i class="fa-solid fa-building"></i>
-            Property Management
-        </a>
-
-       
-
-        <a href="index.html#contact ">
-            <i class="fa-solid fa-map-location-dot"></i>
-            Property Inspection
-        </a>
-
-    </div>
-
-</div>
- <!-- Why Choose Us Dropdown -->
-<div class="nav-dropdown">
-
-    <button class="nav-dropdown-toggle" type="button">
-        Why Choose Us
-        <i class="fa-solid fa-chevron-down"></i>
-    </button>
-
-    <div class="nav-dropdown-menu">
-
-        <a href="./page/properties.html">
-            <i class="fa-solid fa-circle-check"></i>
-            Genuine & Verified Properties
-        </a>
-
-        <a href="index.html#testimonials">
-            <i class="fa-solid fa-shield-halved"></i>
-            Transparent Transactions
-        </a>
-
-        <a href="./page/location.html">
-            <i class="fa-solid fa-location-dot"></i>
-            Strategic Locations
-        </a>
-
-        <a href="./page/properties.html">
-            <i class="fa-solid fa-tags"></i>
-            Affordable Pricing
-        </a>
-
-        <a href="page/payment.html">
-            <i class="fa-solid fa-credit-card"></i>
-            Flexible Payment Plans
-        </a>
-
-        <a href="index.html#contact">
-            <i class="fa-solid fa-headset"></i>
-            Excellent Customer Support
-        </a>
-
-        <a href="page/download.html">
-            <i class="fa-solid fa-file-circle-check"></i>
-            Fast Documentation
-        </a>
-
-        <a href="page/cons.html">
-            <i class="fa-solid fa-chart-line"></i>
-            Investment Potential
-        </a>
-
-    </div>
-
-</div>               
-<!-- Our Team Dropdown -->
-<div class="nav-dropdown">
-
-    <button class="nav-dropdown-toggle" type="button">
-        Our Team
-        <i class="fa-solid fa-chevron-down"></i>
-    </button>
-
-    <div class="nav-dropdown-menu">
-
-        <a href="page/managment.html">
-            <i class="fa-solid fa-user-tie"></i>
-            Management
-        </a>
-
-        <a href="page/logistics.html">
-            <i class="fa-solid fa-gears"></i>
-            Operations & Logistics
-        </a>
-
-        <a href="page/admin.html">
-            <i class="fa-solid fa-clipboard-user"></i>
-            Administration
-        </a>
-
-        <a href="page/customer.html">
-            <i class="fa-solid fa-headset"></i>
-            Customer Care
-        </a>
-
-        <a href="./page/partner.html">
-            <i class="fa-solid fa-users"></i>
-            Affiliate Partner
-        </a>
-
-    </div>
-
-</div>         
-<!-- Contact Dropdown -->
-<div class="nav-dropdown">
-
-    <button class="nav-dropdown-toggle" type="button">
-        Contact
-        <i class="fa-solid fa-chevron-down"></i>
-    </button>
-
-    <div class="nav-dropdown-menu">
-
-        <a href="index.html#contact">
-            <i class="fa-solid fa-address-card"></i>
-            Contact Us
-        </a>
-
-        <a href="index.html#location">
-            <i class="fa-solid fa-location-dot"></i>
-            Office Location
-        </a>
-
-        <a href="tel:+2348102601114 ">
-            <i class="fa-solid fa-phone"></i>
-            Call Us
-        </a>
-
-        <a href="https://wa.me/2348102601114" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-            WhatsApp
-        </a>
-
-        <a href="index.html#contact">
-            <i class="fa-solid fa-envelope"></i>
-            Send an Enquiry
-        </a>
-
-        <a href="page/location.html">
-            <i class="fa-solid fa-calendar-check"></i>
-            Book Property Inspection
-        </a>
-
-    </div>
-
-</div>
-
-                <a href="#properties" class="nav-cta">
-                    Invest Today
-                </a>
-
-            </nav>
-
-            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
-        </div>
-
-    </header>
-
 
     <!-- =====================================================
-         MOBILE MENU
+         MOBILE MENU DRAWER (Mobile Only)
     ====================================================== -->
-
     <div class="mobile-menu" id="mobileMenu">
-
-        <button class="mobile-menu-close" id="mobileMenuClose">
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
             <i class="fa-solid fa-xmark"></i>
         </button>
 
-       <nav class="main-nav">
+        <nav class="main-nav">
 
-                <!-- Home Dropdown -->
-<div class="nav-dropdown">
+            <!-- Properties -->
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" type="button">
+                    Properties <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="nav-dropdown-menu">
+                    <a href="page/properties.html"><i class="fa-solid fa-building"></i> All Properties</a>
+                    <a href="page/properties.html?type=residential-land"><i class="fa-solid fa-house"></i> Residential Land</a>
+                    <a href="page/properties.html?type=commercial-land"><i class="fa-solid fa-city"></i> Commercial Land</a>
+                    <a href="page/properties.html?type=houses"><i class="fa-solid fa-house-chimney"></i> Houses</a>
+                    <a href="page/properties.html?type=apartments"><i class="fa-solid fa-building"></i> Apartments</a>
+                    <a href="page/properties.html?type=commercial"><i class="fa-solid fa-store"></i> Commercial Properties</a>
+                    <a href="page/properties.html?featured=true"><i class="fa-solid fa-star"></i> Featured Properties</a>
+                </div>
+            </div>
 
-    <button class="nav-dropdown-toggle" type="button">
-        Home
-        <i class="fa-solid fa-chevron-down"></i>
-    </button>
+            <!-- Services -->
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" type="button">
+                    Services <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="nav-dropdown-menu">
+                    <a href="page/service.html"><i class="fa-solid fa-briefcase"></i> All Services</a>
+                    <a href="page/properties.html"><i class="fa-solid fa-house"></i> Land & Property Sales</a>
+                    <a href="page/location.html"><i class="fa-solid fa-chart-line"></i> Property Investment Advisory</a>
+                    <a href="page/cons.html"><i class="fa-solid fa-user-tie"></i> Real Estate Consultancy</a>
+                    <a href="page/properties.html"><i class="fa-solid fa-bullhorn"></i> Property Marketing</a>
+                    <a href="page/manage.html"><i class="fa-solid fa-building"></i> Property Management</a>
+                    <a href="page/location.html"><i class="fa-solid fa-map-location-dot"></i> Property Inspection</a>
+                </div>
+            </div>
 
-    <div class="nav-dropdown-menu">
+            <!-- Why Choose Us -->
+            <div class="nav-dropdown">
+                <button class="nav-dropdown-toggle" type="button">
+                    Why Choose Us <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="nav-dropdown-menu">
+                    <a href="index.html#verified-properties"><i class="fa-solid fa-circle-check"></i> Genuine & Verified Properties</a>
+                    <a href="page/core.html"><i class="fa-solid fa-shield-halved"></i> Transparent Transactions</a>
+                    <a href="page/location.html"><i class="fa-solid fa-location-dot"></i> Strategic Locations</a>
+                    <a href="page/promo.html"><i class="fa-solid fa-tags"></i> Affordable Pricing</a>
+                    <a href="page/payment.html"><i class="fa-solid fa-credit-card"></i> Flexible Payment Plans</a>
+                    <a href="page/managment.html"><i class="fa-solid fa-user-tie"></i> Management</a>
+                    <a href="page/logistics.html"><i class="fa-solid fa-gears"></i> Operations & Logistics</a>
+                    <a href="page/admin.html"><i class="fa-solid fa-clipboard-user"></i> Administration</a>
+                    <a href="page/customer.html"><i class="fa-solid fa-headset"></i> Customer Care</a>
+                    <a href="index.html#team"><i class="fa-solid fa-users"></i> Meet The Team</a>
+                    <a href="index.html#contact"><i class="fa-solid fa-headset"></i> Excellent Customer Support</a>
+                    <a href="index.html#contact"><i class="fa-solid fa-file-circle-check"></i> Fast Documentation</a>
+                    <a href="page/partner.html"><i class="fa-solid fa-chart-line"></i> Investment Potential</a>
+                </div>
+            </div>
 
-        <a href="index.html#home">
-            <i class="fa-solid fa-house"></i>
-            Home
-        </a>
-
-        <a href="index.html#find-property">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            Find a Property
-        </a>
-
-        <a href="index.html#properties">
-            <i class="fa-solid fa-building"></i>
-            Featured Properties
-        </a>
-
-        <a href="index.html#about">
-            <i class="fa-solid fa-circle-info"></i>
-            About Urban Edge
-        </a>
-
-        <a href="index.html#services">
-            <i class="fa-solid fa-briefcase"></i>
-            Our Services
-        </a>
-
-        <a href="index.html#why-choose-us">
-            <i class="fa-solid fa-star"></i>
-            Why Choose Us
-        </a>
-
-        <a href="index.html#investment">
-            <i class="fa-solid fa-chart-line"></i>
-            Investment
-        </a>
-
-        <a href="index.html#vision-mission">
-            <i class="fa-solid fa-eye"></i>
-            Vision & Mission
-        </a>
-
-        <a href="index.html#core-values">
-            <i class="fa-solid fa-heart"></i>
-            Core Values
-        </a>
-
-        <a href="index.html#team">
-            <i class="fa-solid fa-users"></i>
-            Our Team
-        </a>
-
-        <a href="index.html#contact">
-            <i class="fa-solid fa-phone"></i>
-            Contact Us
-        </a>
-
+        </nav>
     </div>
-
-</div>
-                <!-- Properties Dropdown -->
-<div class="nav-dropdown">
-
-    <button class="nav-dropdown-toggle" type="button">
-        Properties
-        <i class="fa-solid fa-chevron-down"></i>
-    </button>
-
-    <div class="nav-dropdown-menu">
-
-        <div class="nav-dropdown-menu">
-
-    <svg class="dropdown-svg" viewBox="0 0 250 400" preserveAspectRatio="none">
-        <rect
-            x="1"
-            y="1"
-            width="248"
-            height="398"
-            rx="12"
-            ry="12"
-            pathLength="1000"
-        />
-    </svg>
-
-    <a href="page/properties.html">
-            <i class="fa-solid fa-building"></i>
-            All Properties
-        </a>
-
-        <a href="page/properties.html?type=residential-land">
-            <i class="fa-solid fa-house"></i>
-            Residential Land
-        </a>
-
-        <a href="page/properties.html?type=commercial-land">
-            <i class="fa-solid fa-city"></i>
-            Commercial Land
-        </a>
-
-        <a href="page/properties.html?type=houses">
-            <i class="fa-solid fa-house-chimney"></i>
-            Houses
-        </a>
-
-        <a href="page/properties.html?type=apartments">
-            <i class="fa-solid fa-building"></i>
-            Apartments
-        </a>
-
-        <a href="page/properties.html?type=commercial">
-            <i class="fa-solid fa-store"></i>
-            Commercial Properties
-        </a>
-
-        <a href="page/properties.html?featured=true">
-            <i class="fa-solid fa-star"></i>
-            Featured Properties
-        </a>
-
-    </div>
-
-</div>
-                <!-- About Us Dropdown -->
-<div class="nav-dropdown">
-
-    <button class="nav-dropdown-toggle" type="button">
-        About Us
-        <i class="fa-solid fa-chevron-down"></i>
-    </button>
-
-    <div class="nav-dropdown-menu">
-
-        <a href="index.html#who-we-are">
-            <i class="fa-solid fa-building"></i>
-            Who We Are
-        </a>
-
-        <a href="pages/fqa.html#our-story">
-            <i class="fa-solid fa-clock-rotate-left"></i>
-            Our Story
-        </a>
-
-        <a href="index.html#vision">
-            <i class="fa-solid fa-eye"></i>
-            Our Vision
-        </a>
-
-        <a href="index.html#mission">
-            <i class="fa-solid fa-bullseye"></i>
-            Our Mission
-        </a>
-
-        <a href="index.html#core-values">
-            <i class="fa-solid fa-heart"></i>
-            Our Core Values
-        </a>
-
-        <a href="index.html#why-choose-us">
-            <i class="fa-solid fa-star"></i>
-            Why Choose Urban Edge
-        </a>
-
-        <a href="index.html#team">
-            <i class="fa-solid fa-users"></i>
-            Our Team
-        </a>
-
-        <a href="index.html#contact">
-            <i class="fa-solid fa-phone"></i>
-            Contact Us
-        </a>
-
-    </div>
-
-</div>
-              
-<!-- Services Dropdown -->
-<div class="nav-dropdown">
-
-    <button class="nav-dropdown-toggle" type="button">
-        Services
-        <i class="fa-solid fa-chevron-down"></i>
-    </button>
-
-    <div class="nav-dropdown-menu">
-
-        <a href="page/service.html">
-            <i class="fa-solid fa-briefcase"></i>
-            All Services
-        </a>
-
-        <a href="page/properties.html">
-            <i class="fa-solid fa-house"></i>
-            Land & Property Sales
-        </a>
-
-        <a href="page/location.html">
-            <i class="fa-solid fa-chart-line"></i>
-            Property Investment Advisory
-        </a>
-
-        <a href="page/cons.html">
-            <i class="fa-solid fa-user-tie"></i>
-            Real Estate Consultancy
-        </a>
-
-        <a href="page/properties.html">
-            <i class="fa-solid fa-bullhorn"></i>
-            Property Marketing
-        </a>
-
-        <a href="page/manage.html">
-            <i class="fa-solid fa-building"></i>
-            Property Management
-        </a>
-
-       
-
-        <a href="page/location.html">
-            <i class="fa-solid fa-map-location-dot"></i>
-            Property Inspection
-        </a>
-
-    </div>
-
-</div>
- <!-- Why Choose Us Dropdown -->
-<div class="nav-dropdown">
-
-    <button class="nav-dropdown-toggle" type="button">
-        Why Choose Us
-        <i class="fa-solid fa-chevron-down"></i>
-    </button>
-
-    <div class="nav-dropdown-menu">
-
-        <a href="index.html#verified-properties">
-            <i class="fa-solid fa-circle-check"></i>
-            Genuine & Verified Properties
-        </a>
-
-        <a href="page/core.html">
-            <i class="fa-solid fa-shield-halved"></i>
-            Transparent Transactions
-        </a>
-
-        <a href="page/location.html">
-            <i class="fa-solid fa-location-dot"></i>
-            Strategic Locations
-        </a>
-
-        <a href="page/promo.html">
-            <i class="fa-solid fa-tags"></i>
-            Affordable Pricing
-        </a>
-
-        <a href="page/payment.html">
-            <i class="fa-solid fa-credit-card"></i>
-            Flexible Payment Plans
-        </a>
-
-        <a href="index.html#contact">
-            <i class="fa-solid fa-headset"></i>
-            Excellent Customer Support
-        </a>
-
-        <a href="index.html#contact">
-            <i class="fa-solid fa-file-circle-check"></i>
-            Fast Documentation
-        </a>
-
-        <a href="page/partner.html">
-            <i class="fa-solid fa-chart-line"></i>
-            Investment Potential
-        </a>
-
-    </div>
-
-</div>               
-<!-- Our Team Dropdown -->
-<div class="nav-dropdown">
-
-    <button class="nav-dropdown-toggle" type="button">
-        Our Team
-        <i class="fa-solid fa-chevron-down"></i>
-    </button>
-
-    <div class="nav-dropdown-menu">
-
-        <a href="page/managment.html">
-            <i class="fa-solid fa-user-tie"></i>
-            Management
-        </a>
-
-        <a href="page/logistics.html">
-            <i class="fa-solid fa-gears"></i>
-            Operations & Logistics
-        </a>
-
-        <a href="page/admin.html">
-            <i class="fa-solid fa-clipboard-user"></i>
-            Administration
-        </a>
-
-        <a href="page/customer.html">
-            <i class="fa-solid fa-headset"></i>
-            Customer Care
-        </a>
-
-        <a href="index.html#team">
-            <i class="fa-solid fa-users"></i>
-            Meet The Team
-        </a>
-
-    </div>
-
-</div>         
-<!-- Contact Dropdown -->
-<div class="nav-dropdown">
-
-    <button class="nav-dropdown-toggle" type="button">
-        Contact
-        <i class="fa-solid fa-chevron-down"></i>
-    </button>
-
-    <div class="nav-dropdown-menu">
-
-        <a href="index.html#contact">
-            <i class="fa-solid fa-address-card"></i>
-            Contact Us
-        </a>
-
-        <a href="index.html#location">
-            <i class="fa-solid fa-location-dot"></i>
-            Office Location
-        </a>
-
-        <a href="tel:+2348102601114 ">
-            <i class="fa-solid fa-phone"></i>
-            Call Us
-        </a>
-
-        <a href="https://wa.me/2348102601114" target="_blank">
-            <i class="fa-brands fa-whatsapp"></i>
-            WhatsApp
-        </a>
-
-        <a href="index.html#contact">
-            <i class="fa-solid fa-envelope"></i>
-            Send an Enquiry
-        </a>
-
-        <a href="index.html#contact">
-            <i class="fa-solid fa-calendar-check"></i>
-            Book Property Inspection
-        </a>
-
-    </div>
-
-</div>
-
-                <a href="#properties" class="nav-cta">
-                    Invest Today
-                </a>
-
-            </nav>
-
-            <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-
-        </div>
-
-    </header>
-
-
-    </div>
-
-
-    <main>
-
+</header>
        <!-- =================================================
      HERO SECTION
 ================================================== -->
@@ -1108,304 +528,217 @@
 <!-- =================================================
     PROPERTY SEARCH
 ================================================== -->
-<section class="property-search" id="find-property"> 
-<div class="container"> 
-<div class="search-box"> 
-<div class="search-heading">
-<span>FIND YOUR PROPERTY</span> 
-<h2>What are you looking for?</h2> 
-</div> <form class="property-search-form">
-<div class="search-field"> 
-<label>I'm Looking To</label> 
-<select> 
-    <option>Buy Property</option> 
-    <option>Rent Property</option> 
-    <option>Invest</option> 
-</select> 
-</div> 
-<div class="search-field">
-    <label>Property Type</label>
-    <select> 
-    <option>All Property Types</option> 
-    <option>Residential Land</option> 
-    <option>Commercial Land</option> 
-    <option>House</option>
-        <option>Apartment</option>
-        <option>Commercial Property</option> 
-    </select> 
-</div> 
-<div class="search-field"> 
-    <label>Location</label>
-<select>
-    <option>All Locations</option> 
-    <option>Awka</option> 
-    <option>Anambra</option> 
-    <option>Lagos</option> 
-    <option>Abuja</option> 
-</select>
-</div> 
-<div class="search-field"> 
-<label>Budget</label> 
-<select> 
-    <option>Any Budget</option> 
-    <option>Under ₦5 Million</option>
-        <option>₦5M - ₦10M</option> 
-        <option>₦10M - ₦20M</option> 
-        <option>₦20M+</option> 
-    </select> 
-</div> 
-<a href="page/payment.html">
-  <button type="button" class="search-button">
-    <i class="fa-solid fa-magnifying-glass"></i> 
-    Search 
-  </button>
-</a>
-</form> 
-</div> 
-</div> 
-</section>
+<section class="property-search" id="find-property">
+  <div class="container">
+    <div class="search-box">
+      
+      <div class="search-heading">
+        <span>FIND YOUR PROPERTY</span>
+        <h2>What are you looking for?</h2>
+      </div>
 
-        <!-- =================================================
-        FEATURED PROPERTIES
-================================================== -->
+      <form class="property-search-form" action="page/properties.html" method="GET">
+        
+        <div class="search-field">
+          <label for="intent">I'm Looking To</label>
+          <select id="intent" name="intent">
+            <option value="buy">Buy Property</option>
+            <option value="rent">Rent Property</option>
+            <option value="invest">Invest</option>
+          </select>
+        </div>
 
-<section class="section properties-section" id="properties">
+        <div class="search-field">
+          <label for="type">Property Type</label>
+          <select id="type" name="type">
+            <option value="all">All Property Types</option>
+            <option value="residential-land">Residential Land</option>
+            <option value="commercial-land">Commercial Land</option>
+            <option value="house">House</option>
+            <option value="apartment">Apartment</option>
+            <option value="commercial-property">Commercial Property</option>
+          </select>
+        </div>
 
-<div class="container">
+        <div class="search-field">
+          <label for="location">Location</label>
+          <select id="location" name="location">
+            <option value="all">All Locations</option>
+            <option value="awka">Awka</option>
+            <option value="anambra">Anambra</option>
+            <option value="lagos">Lagos</option>
+            <option value="abuja">Abuja</option>
+          </select>
+        </div>
 
-<div class="section-heading">
+        <div class="search-field">
+          <label for="budget">Budget</label>
+          <select id="budget" name="budget">
+            <option value="any">Any Budget</option>
+            <option value="under-5m">Under ₦5 Million</option>
+            <option value="5m-10m">₦5M - ₦10M</option>
+            <option value="10m-20m">₦10M - ₦20M</option>
+            <option value="20m-plus">₦20M+</option>
+          </select>
+        </div>
 
-    <div>
+        <div class="search-action">
+          <button type="submit" class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search
+          </button>
+        </div>
 
-        <span class="section-label">
-            OUR PROPERTIES
-        </span>
-
-        <h2>
-            Featured Investment Opportunities
-        </h2>
+      </form>
 
     </div>
-
-    <a href="page/properties.html" class="view-all">
+  </div>
+</section>
+    <!-- =================================================
+     FEATURED PROPERTIES
+================================================== -->
+<section class="section properties-section" id="properties">
+  <div class="container">
+    
+    <!-- Section Header -->
+    <div class="section-heading">
+      <div>
+        <span class="section-label">OUR PROPERTIES</span>
+        <h2>Featured Investment Opportunities</h2>
+      </div>
+      <a href="page/properties.html" class="view-all">
         View All Properties
         <i class="fa-solid fa-arrow-right"></i>
-    </a>
+      </a>
+    </div>
 
-</div>
-
-
+    <!-- Properties Cards Grid -->
     <div class="property-grid">
 
-
-<!-- PROPERTY CARD 1 -->
-
-<article class="property-card">
-
-<div class="property-image">
-
-    <img src="infor/p1.jpg"
-        alt="Urban Edge residential land">
-
-    <span class="property-status">
-        For Sale
-    </span>
-
-    <button class="property-favorite"
-        aria-label="Add to favorites">
-        <i class="fa-regular fa-heart"></i>
-    </button>
-
-</div>
-
-<div class="property-content">
-
-    <span class="property-type">
-        Residential Land
-    </span>
-
-    <h3>
-        Urban Edge Gardens
-    </h3>
-
-    <p class="property-location">
-        <i class="fa-solid fa-location-dot"></i>
-        5 minutes from UNIZIK School Gate Expressway
-    </p>
-
-    <div class="property-meta">
-
-        <span>
-            <i class="fa-solid fa-ruler-combined"></i>
-            464sqm
-        </span>
-
-        <span>
-            <i class="fa-solid fa-file-circle-check"></i>
-            Verified
-        </span>
-
-    </div>
-
-        <div class="property-bottom">
-
-            <strong>
-                ₦4,500,000
-            </strong>
-
-            <a href="pages/property-details.html"
-                class="property-link">
-                View Property
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
+      <!-- PROPERTY CARD 1 -->
+      <article class="property-card">
+        <div class="property-image">
+          <img src="infor/p1.jpeg" alt="Ifeadigo Layout">
+          <span class="property-status">For Sale</span>
+          <button class="property-favorite" aria-label="Add to favorites">
+            <i class="fa-regular fa-heart"></i>
+          </button>
         </div>
 
-    </div>
+        <div class="property-content">
+          <span class="property-type">Residential Land</span>
+          <h3>Ifeadigo Layout</h3>
 
-</article>
-
-
-<!-- PROPERTY CARD 2 -->
-
-<article class="property-card">
-
-    <div class="property-image">
-
-        <img src="infor/p2.png"
-            alt="Urban Edge commercial property">
-
-        <span class="property-status">
-            Featured
-        </span>
-
-        <button class="property-favorite"
-            aria-label="Add to favorites">
-            <i class="fa-regular fa-heart"></i>
-        </button>
-
-    </div>
-
-    <div class="property-content">
-        <span class="property-type">
-            Commercial Land
-        </span>
-
-        <h3>
-            Urban Edge Business District
-        </h3>
-
-        <p class="property-location">
+          <p class="property-location">
             <i class="fa-solid fa-location-dot"></i>
-            Igbariam <i>directly opposite Edube-Monso</i>.
-        </p>
+            5 minutes from UNIZIK School Gate Expressway
+          </p>
 
-        <div class="property-meta">
-
+          <div class="property-meta">
             <span>
-                <i class="fa-solid fa-ruler-combined"></i>
-                1,000 SQM
+              <i class="fa-solid fa-ruler-combined"></i>
+              464sqm
             </span>
-
             <span>
-                <i class="fa-solid fa-file-circle-check"></i>
-                Verified
+              <i class="fa-solid fa-file-circle-check"></i>
+              Verified
             </span>
+          </div>
 
-        </div>
-
-        <div class="property-bottom">
-
-            <strong>
-                ₦5,500,000
-            </strong>
-
-            <a href="pages/property-details.html"
-                class="property-link">
-                View Property
-                <i class="fa-solid fa-arrow-right"></i>
+          <div class="property-bottom">
+            <strong>₦4,500,000</strong>
+            <a href="page/properties.html" class="property-link">
+              View Property
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
+          </div>
+        </div>
+      </article>
 
+      <!-- PROPERTY CARD 2 -->
+      <article class="property-card">
+        <div class="property-image">
+          <img src="infor/p2.jpeg" alt="Urban Garden">
+          <span class="property-status">Featured</span>
+          <button class="property-favorite" aria-label="Add to favorites">
+            <i class="fa-regular fa-heart"></i>
+          </button>
         </div>
 
-    </div>
+        <div class="property-content">
+          <span class="property-type">Commercial Land</span>
+          <h3>Urban Garden</h3>
 
-</article>
+          <p class="property-location">
+            <i class="fa-solid fa-location-dot"></i>
+            Igbariam directly opposite Edube-Monso
+          </p>
 
+          <div class="property-meta">
+            <span>
+              <i class="fa-solid fa-ruler-combined"></i>
+              1,000 SQM
+            </span>
+            <span>
+              <i class="fa-solid fa-file-circle-check"></i>
+              Verified
+            </span>
+          </div>
 
-<!-- PROPERTY CARD 3 -->
+          <div class="property-bottom">
+            <strong>₦5,500,000</strong>
+            <a href="page/properties.html" class="property-link">
+              View Property
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article>
 
-<article class="property-card">
-
-    <div class="property-image">
-
-        <img src="infor/new.jpeg"
-            alt="Urban Edge luxury property">
-
-        <span class="property-status">
-            New
-        </span>
-
-        <button class="property-favorite"
-            aria-label="Add to favorites">
+      <!-- PROPERTY CARD 3 -->
+      <article class="property-card">
+        <div class="property-image">
+          <img src="infor/new.jpeg" alt="Urban Edge luxury property">
+          <span class="property-status">New</span>
+          <button class="property-favorite" aria-label="Add to favorites">
             <i class="fa-regular fa-heart"></i>
-        </button>
+          </button>
+        </div>
 
-    </div>
+        <div class="property-content">
+          <span class="property-type">Luxury Home</span>
+          <h3>Urban Ville</h3>
 
-    <div class="property-content">
-
-        <span class="property-type">
-            Luxury Home
-        </span>
-
-        <h3>
-            Urban Villa Residential Layout
-        </h3>
-
-        <p class="property-location">
+          <p class="property-location">
             <i class="fa-solid fa-location-dot"></i>
             Ukwulu Awka, Anambra State
-        </p>
+          </p>
 
-        <div class="property-meta">
-
+          <div class="property-meta">
             <span>
-                <i class="fa-solid fa-bed"></i>
-                7 minute drive to ukwulu Health Center
+              <i class="fa-solid fa-clock"></i>
+              7 min drive to Ukwulu Health Center
             </span>
-
             <span>
-                <i class="fa-solid fa-bath"></i>
-                High Value Appreciation
+              <i class="fa-solid fa-chart-line"></i>
+              High Value Appreciation
             </span>
+          </div>
 
-        </div>
-
-        <div class="property-bottom">
-
-            <strong>
-                ₦2,500,000
-            </strong>
-
-            <a href="pages/property-details.html"
-                class="property-link">
-                View Property
-                <i class="fa-solid fa-arrow-right"></i>
+          <div class="property-bottom">
+            <strong>₦2,500,000</strong>
+            <a href="page/properties.html" class="property-link">
+              View Property
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
-
+          </div>
         </div>
+      </article>
 
     </div>
 
-</article>
-
-    </div>
-
-</div>
-
-</section>
-
+  </div>
+</section>   
 
 <!-- =================================================
         ABOUT US
