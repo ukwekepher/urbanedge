@@ -2432,7 +2432,7 @@ p {
             rgba(3, 47, 27, 0.88),
             rgba(3, 47, 27, 0.88)
         ),
-        url("../infor/p1.jpg") center / cover no-repeat;
+        url("../infor/p1.jpeg") center / cover no-repeat;
 
     overflow: hidden;
 }
